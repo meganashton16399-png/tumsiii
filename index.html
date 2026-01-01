@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Stuti ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="intro-screen" class="screen">
+        <div class="content">
+            <h1>HEY STUTI<br>I'VE SOMETHING FOR YOU<br>HAPPY NEW YEAR 2026<br>CLICK ON "YES" TO SEE</h1>
+            <img id="intro-img" src="" style="display:none;" class="cat-img"> 
+            <div class="buttons-container">
+                <div class="button-wrapper" id="yes-wrapper">
+                    <span class="emoji-deco top-left">🎀</span>
+                    <button id="yes-btn" class="btn pill-btn">YES</button>
+                    <span class="emoji-deco bottom-right">🎀</span>
+                </div>
+                <div class="button-wrapper">
+                    <span class="emoji-deco top-left">🎀</span>
+                    <button id="no-btn" class="btn pill-btn">NO</button>
+                    <span class="emoji-deco bottom-right">🎀</span>
+                </div>
+            </div>
+            <div class="bottom-emojis">🌹 💖 🎀 🦋 💋</div>
+        </div>
+    </div>
+
+    <div id="surprise-screen" class="screen hidden">
+        <div class="content">
+            <img src="assets/cute_cat.png" id="surprise-cat" class="cat-main">
+            <h2 id="surprise-title">EHEHEHE GOOD STUTI<br>NOW CLICK ON THE GIFT</h2>
+            <div id="gift-box-container" class="gift-container" onclick="revealItems()">
+                <img src="assets/gift_box_main.png" class="main-gift-box">
+            </div>
+            <div id="revealed-items" class="grid-container hidden-reveal">
+                <div class="grid-item" onclick="openModal('letter')"><img src="assets/envelope.png"></div>
+                <div class="grid-item" onclick="openModal('photos')"><img src="assets/camera.png"></div>
+                <div class="grid-item" onclick="openModal('flowers')"><img src="assets/flowers_icon.png"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-overlay" class="hidden" onclick="closeModal()"></div>
+
+    <div id="modal-letter" class="modal hidden wide-modal">
+        <div class="side-layout">
+            <div class="side-text">
+                <p>Hey stutiiii,,, Happy new year my jaanu my this year was sm great because of you we had sm fun we made memories we met and took so many photos of yours some of them you can even see of yours on right side tho hehehe anyways and then we watched series tooo together idk i feel so happy and special spending time w you you’re my lucky charm you’re my everything im nothing without you this words can’t describe how much i love you and i’m obsessed w you anywayssss cutu HAPPPYYY NEW YEARRRR <3</p>
+            </div>
+            <div class="side-media grid-4">
+                <img src="assets/stuti_1.jpg" class="mini-photo">
+                <img src="assets/stuti_2.jpg" class="mini-photo">
+                <img src="assets/stuti_3.jpg" class="mini-photo">
+                <img src="assets/stuti_4.jpg" class="mini-photo">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-photos" class="modal hidden wide-modal">
+        <div class="side-layout">
+            <div class="side-text">
+                <p>These pictures are so us, goofy, close, unbothered. I smile every time I see them because being with you always feels this easy. My favourite kind of moments are the ones with you. 💗</p>
+            </div>
+            <div class="side-media grid-4">
+                <img src="assets/stuti_5.jpg" class="mini-photo">
+                <img src="assets/stuti_6.jpg" class="mini-photo">
+                <img src="assets/stuti_7.jpg" class="mini-photo">
+                <img src="assets/stuti_8.jpg" class="mini-photo">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-flowers" class="modal hidden wide-modal">
+        <div class="side-layout">
+            <div class="side-text">
+                <p>Hey Stuti, sending you lots of love and a bunch of virtual flowers, just because you deserve them and more.</p>
+            </div>
+            <div class="side-media"><img src="assets/bouquet_cat.png" class="cat-bouquet-img"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
