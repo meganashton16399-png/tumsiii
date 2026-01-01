@@ -1,0 +1,23 @@
+body { margin: 0; padding: 0; font-family: 'Fredoka', sans-serif; background: #fbc6d0; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+.screen { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.hidden { display: none !important; }
+h1, h2 { color: #800000; text-align: center; line-height: 1.4; padding: 0 20px; font-size: 1.2rem; }
+.buttons-container { display: flex; gap: 40px; margin-top: 20px; }
+.button-wrapper { position: relative; }
+.pill-btn { background: #f8a5b5; color: #800000; border: 3px solid white; border-radius: 50px; padding: 10px 40px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1); font-size: 1.1rem; }
+.emoji-deco { position: absolute; font-size: 22px; z-index: 2; }
+.top-left { top: -12px; left: -18px; }
+.bottom-right { bottom: -12px; right: -18px; }
+.main-gift-box { width: 150px; cursor: pointer; animation: bounce 2s infinite; }
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+.hidden-reveal { opacity: 0; visibility: hidden; display: none; }
+.show-items { opacity: 1 !important; visibility: visible !important; display: flex !important; justify-content: center; gap: 20px; margin-top: 20px; }
+.grid-item img { width: 80px; cursor: pointer; }
+#modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(128, 0, 0, 0.25); z-index: 10; }
+.modal { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fffafa; padding: 20px; border-radius: 20px; z-index: 11; width: 90%; max-width: 550px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+.side-layout { display: flex; align-items: center; gap: 15px; text-align: left; }
+.side-text { flex: 1.2; font-size: 0.75rem; color: #551a1a; line-height: 1.4; }
+.grid-4 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; flex: 1; }
+.mini-photo { width: 100%; height: 75px; object-fit: cover; border: 2px solid white; border-radius: 5px; }
+.cat-bouquet-img, .cat-main, .cat-img { width: 150px; }
+.bottom-emojis { margin-top: 40px; font-size: 1.5rem; letter-spacing: 12px; }
